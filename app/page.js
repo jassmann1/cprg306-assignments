@@ -1,15 +1,17 @@
-// app/page.js
 import Link from "next/link";
 
-export default function Home() {
+export default function Page() {
   return (
-    <main>
-      <h1>CPRG 306: Web Development 2 - Assignments</h1>
-      <p>
-        Go to the
-        <Link href="/week-2">Week 2 page</Link>
-        to see the Shopping List.
-      </p>
+    <main className="p-6">
+      <h1 className="text-2xl font-bold mb-4">Assignments</h1>
+      <ul className="list-disc pl-5">
+        <li>
+          <Link href="/week-3">Week 3 Assignment</Link>
+        </li>
+        <li>
+          <Link href="/week-4">Week 4 Assignment</Link>
+        </li>
+      </ul>
     </main>
   );
 }
